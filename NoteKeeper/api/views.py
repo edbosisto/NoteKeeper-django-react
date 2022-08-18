@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from django.http import JsonResponse
+from rest_framework.response import Response
 
 # Create your views here.
 
 def getNotes(request):
-    return JsonResponse("Api", safe=False)
+    return Response("Api", safe=False)
 
