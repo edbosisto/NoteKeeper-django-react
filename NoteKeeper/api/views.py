@@ -1,3 +1,4 @@
+from http.client import HTTPResponse
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -18,4 +19,5 @@ def getNote(request, id):
     notes = Note.objects.get(id=id)
     serializer = NoteSerializer(notes, many=False)
     return Response(serializer.data)
+
 
