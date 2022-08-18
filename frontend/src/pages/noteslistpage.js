@@ -1,11 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 
 const NotesListPage = () => {
-  return (
-    <div>
-        Notes
-    </div>
-  )
-}
+  return <div>Notes</div>;
+};
 
-export default NotesListPage
+export default NotesListPage;
