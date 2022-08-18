@@ -3,6 +3,6 @@ from django.http import JsonResponse
 
 # Create your views here.
 
-def getRoutes(request):
+def getNotes(request):
     return JsonResponse("Api", safe=False)
 
